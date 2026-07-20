@@ -1,0 +1,115 @@
+:root {
+  --cor-principal: #F07027;
+  --cor-destaque-branco: #F5F5F7;
+  --cor-destaque-preto: #0F0F0F;
+  --cor-complementar: #F0AE26; 
+  --font-principal: "Russo One", sans-serif;
+  --font-secundaria: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------ ESTILIZAÇÃO DO HEADER-----------*/
+.header {
+  font-family: var(--font-secundaria);
+  color: var(--cor-destaque-branco);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 8px 16px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header-logo {
+  justify-self: start;
+}
+
+.header-nav {
+  justify-self: center;
+}
+
+.header-btn-container {
+  justify-self: end;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.header-nav ul a {
+  text-decoration: none;
+  color: var(--cor-destaque-branco);
+}
+
+.header-nav li {
+  list-style: none;
+}
+
+.btn {
+  font-family: var(--font-secundaria);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque-branco);
+  padding: 8px 16px;
+}
+
+/* ------------ ESTILIZAÇÃO DO BODY---------- */
+/*                    HERO                    */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 240px;
+  background-image: url("assets/imgs/foto-fundo-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 35%,rgba(240, 112, 39, 0.5) 100%);
+  z-index: 0;
+}
+
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  z-index: 1;
+  color: var(--cor-destaque-branco);
+  width: 500px;
+}
+
+.hero-text h1 {
+  font-family: var(--font-principal);
+  margin-bottom: 8px;
+}
+
+.hero-text h2 {
+  font-family: var(--font-secundaria);
+  font-weight: 400;
+}
+
+.hero-img-content {
+  height: 450px;
+  z-index: 1;
+}
