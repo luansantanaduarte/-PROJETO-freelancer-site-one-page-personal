@@ -41,6 +41,10 @@
   justify-self: end;
 }
 
+.header-btn {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
 .header-nav ul {
   display: flex;
   align-items: center;
@@ -66,6 +70,15 @@
   padding: 8px 16px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 1fr ;
+  }
+  .header-nav {
+    display: none;
+  }
+}
+
 /* ------------ ESTILIZAÇÃO DO BODY---------- */
 /*                    HERO                    */
 .hero {
@@ -73,7 +86,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 240px;
+  padding-right: clamp(1rem, 8vw, 15rem);
+  padding-left: clamp(1rem, 8vw, 15rem);
   background-image: url("assets/imgs/foto-fundo-hero.png");
   background-size: cover;
   background-position: center;
@@ -96,15 +110,17 @@
   align-items: flex-start;
   z-index: 1;
   color: var(--cor-destaque-branco);
-  width: 500px;
+  width: clamp(200px, 60vw, 500px);
 }
 
 .hero-text h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
   font-family: var(--font-principal);
   margin-bottom: 8px;
 }
 
 .hero-text h2 {
+  font-size: clamp(1rem, 1vw, 3rem);
   font-family: var(--font-secundaria);
   font-weight: 400;
 }
@@ -112,4 +128,63 @@
 .hero-img-content {
   height: 450px;
   z-index: 1;
+}
+
+/*                  SOBRE MIM                 */
+.sobre-mim {
+  background-color: var(--cor-destaque-branco);
+  padding-right: clamp(1rem, 8vw, 15rem);
+  padding-left: clamp(1rem, 8vw, 15rem);
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  justify-content: center;
+  padding-top: 64px;
+}
+
+.sobre-mim-img-content {
+  height: 450px;
+}
+
+.sobre-mim-title h2 {
+  font-size: clamp(2rem, 2vw, 5rem);
+  font-family: var(--font-principal);
+}
+
+.sobre-mim-title h3 {
+  font-size: clamp(1rem, 1vw, 3rem);
+  font-family: var(--font-secundaria);
+  font-weight: 400;
+}
+
+.sobre-mim-subtitle-strong {
+  color: var(--cor-principal);
+}
+
+.sobre-mim-cards-container {
+  padding-top: 8px;
+}
+
+.sobre-mim-cards {
+  background: #FCE2D4;
+  border: 2px solid var(--cor-complementar);
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  margin-top: 12px;
+  padding: 8px 12px ;
+  gap: 12px;
+}
+
+.sobre-mim-cards p {
+  font-family: var(--font-secundaria);
+  font-weight: 700;
+  color: var(--cor-principal);
+}
+
+.sobre-mim-cards img {
+  width: 36px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: var(--cor-complementar);
 }
