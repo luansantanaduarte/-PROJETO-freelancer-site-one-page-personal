@@ -188,3 +188,44 @@
   border-radius: 8px;
   background-color: var(--cor-complementar);
 }
+
+/*                  SERVIÇOS                 */
+.servicos {
+  background-color: var(--cor-principal);
+  padding: 48px clamp(1rem, 8vw, 15rem);
+  
+}
+
+.servicos-text-container {
+  color: var(--cor-destaque-branco);
+}
+
+.servicos-text-container h2 {
+  font-family: var(--font-principal);
+}
+
+.servicos-text-container p {
+  font-family: var(--font-secundaria);
+}
+
+.servicos-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.servico-card {
+  width: 350px;
+}
+
+.servico-card-text {
+  padding: 12px 24px;
+  background-color: var(--cor-destaque-branco);
+  font-family: var(--font-secundaria);
+}
+
+.servico-card-text h3 {
+    color: var(--cor-principal);
+    margin-bottom: 8px;
+}
