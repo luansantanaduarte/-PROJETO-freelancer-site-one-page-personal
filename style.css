@@ -206,6 +206,9 @@
 /*                  SERVIÇOS                 */
 .servicos {
   background-color: var(--cor-principal);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   padding: 48px clamp(1rem, 8vw, 15rem);
   
 }
@@ -225,18 +228,15 @@
 .servicos-card-container {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 16px;
 }
 
-@media (width <= 750px) {
+@media (width <= 960px) {
   .servicos-card-container {
     align-items: center;
     flex-direction: column;
   }
-}
-
-.servico-card {
-  width: 350px;
 }
 
 .servico-card-text {
@@ -248,4 +248,19 @@
 .servico-card-text h3 {
     color: var(--cor-principal);
     margin-bottom: 8px;
+}
+
+.servico-card img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.servicos-btn {
+  align-self: center;
+  color: var(--cor-destaque-branco);
+  background-color: var(--cor-complementar);
+  padding: 12px 24px;
+  width: 180px;
 }
