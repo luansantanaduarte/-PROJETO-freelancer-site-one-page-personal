@@ -42,7 +42,7 @@
 }
 
 .header-btn {
-  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-size: clamp(0.8rem, 0.5vw, 1rem);
 }
 
 .header-nav ul {
@@ -103,6 +103,12 @@
   z-index: 0;
 }
 
+@media (width <= 668px) {
+  .hero {
+    background-position: 70% center;
+  }
+}
+
 .hero-text-content {
   display: flex;
   flex-direction: column;
@@ -115,8 +121,8 @@
 }
 
 .hero-text h1 {
-  width: clamp(220px, 60vw, 720px);
-  font-size: clamp(3rem, 4vw, 5rem);
+  width: clamp(220px, 60vw, 1000px);
+  font-size: clamp(2rem, 3.5vw, 4rem);
   font-family: var(--font-principal);
   margin-bottom: 4px;
 }
@@ -128,7 +134,8 @@
 }
 
 .hero-btn {
-  padding: 12px 36px;
+  padding: 12px 24px;
+  width: 180px;
 }
 
 /*                  SOBRE MIM                 */
@@ -140,7 +147,13 @@
   align-items: center;
   gap: 36px;
   justify-content: center;
-  padding-top: 64px;
+  padding: 64px;
+}
+
+@media (width <= 750px) {
+  .sobre-mim {
+    flex-direction: column;
+  }
 }
 
 .sobre-mim-img-content {
@@ -213,7 +226,13 @@
   display: flex;
   justify-content: center;
   gap: 16px;
+}
 
+@media (width <= 750px) {
+  .servicos-card-container {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .servico-card {
