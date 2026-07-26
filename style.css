@@ -83,11 +83,11 @@
 /*                    HERO                    */
 .hero {
   position: relative;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: clamp(1rem, 8vw, 15rem);
-  padding-left: clamp(1rem, 8vw, 15rem);
+  padding: clamp(1rem, 10vw, 15rem);
   background-image: url("assets/imgs/foto-fundo-hero.png");
   background-size: cover;
   background-position: center;
@@ -106,28 +106,29 @@
 .hero-text-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
+  gap: 32px;
+  align-items: center;
   z-index: 1;
   color: var(--cor-destaque-branco);
   width: clamp(200px, 60vw, 500px);
+  text-align: center;
 }
 
 .hero-text h1 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  width: clamp(220px, 60vw, 720px);
+  font-size: clamp(3rem, 4vw, 5rem);
   font-family: var(--font-principal);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .hero-text h2 {
-  font-size: clamp(1rem, 1vw, 3rem);
+  font-size: clamp(1rem, 1.2vw, 2rem);
   font-family: var(--font-secundaria);
   font-weight: 400;
 }
 
-.hero-img-content {
-  height: 450px;
-  z-index: 1;
+.hero-btn {
+  padding: 12px 36px;
 }
 
 /*                  SOBRE MIM                 */
