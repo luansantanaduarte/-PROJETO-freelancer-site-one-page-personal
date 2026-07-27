@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*------------ ESTILIZAÇÃO DO HEADER-----------*/
 .header {
   font-family: var(--font-secundaria);
@@ -63,6 +67,7 @@
 
 .btn {
   font-family: var(--font-secundaria);
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   background-color: var(--cor-principal);
@@ -252,7 +257,7 @@
 .servico-card img {
   display: block;
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
 }
 
