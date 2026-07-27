@@ -1,8 +1,8 @@
 :root {
-  --cor-principal: #F07027;
-  --cor-destaque-branco: #F5F5F7;
-  --cor-destaque-preto: #0F0F0F;
-  --cor-complementar: #F0AE26; 
+  --cor-principal: #f07027;
+  --cor-destaque-branco: #f5f5f7;
+  --cor-destaque-preto: #0f0f0f;
+  --cor-complementar: #f0ae26;
   --font-principal: "Russo One", sans-serif;
   --font-secundaria: "Manrope", sans-serif;
 }
@@ -77,7 +77,7 @@ html {
 
 @media (max-width: 768px) {
   .header {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
   .header-nav {
     display: none;
@@ -103,7 +103,11 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 35%,rgba(240, 112, 39, 0.5) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(240, 112, 39, 0.5) 100%
+  );
   z-index: 0;
 }
 
@@ -184,13 +188,13 @@ html {
 }
 
 .sobre-mim-cards {
-  background: #FCE2D4;
+  background: #fce2d4;
   border: 2px solid var(--cor-complementar);
   border-radius: 8px;
   align-items: center;
   display: flex;
   margin-top: 12px;
-  padding: 8px 12px ;
+  padding: 8px 12px;
   gap: 12px;
 }
 
@@ -214,7 +218,6 @@ html {
   flex-direction: column;
   gap: 18px;
   padding: 48px clamp(1rem, 8vw, 15rem);
-  
 }
 
 .servicos-text-container {
@@ -250,8 +253,8 @@ html {
 }
 
 .servico-card-text h3 {
-    color: var(--cor-principal);
-    margin-bottom: 8px;
+  color: var(--cor-principal);
+  margin-bottom: 8px;
 }
 
 .servico-card img {
