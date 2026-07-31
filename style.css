@@ -255,8 +255,13 @@ html {
   }
 }
 
+.servico-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .servico-card-text {
-  padding: 12px 24px;
+  padding: 16px 24px;
   background-color: var(--cor-destaque-branco);
   font-family: var(--font-secundaria);
 }
@@ -280,3 +285,5 @@ html {
   padding: 12px 24px;
   width: 180px;
 }
+
+/*                 DEPOIMENTOS                */
