@@ -28,13 +28,19 @@ section {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 8px 16px;
+  padding: 16px 16px;
   background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-scrolled {
+  background-color: #1E1E1E;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .header-logo {
@@ -341,4 +347,3 @@ section {
   font-weight: 400;
   font-family: var(--font-secundaria);
 }
-
