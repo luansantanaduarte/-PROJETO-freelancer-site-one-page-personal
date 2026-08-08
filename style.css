@@ -298,8 +298,13 @@ section {
 }
 
 /*                 DEPOIMENTOS                */
+.depoimentos {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .depoimentos-text-container {
+  padding: 0 clamp(1rem, 8vw, 15rem);
   color: var(--cor-principal);
 }
 
@@ -312,6 +317,47 @@ section {
   font-weight: 400;
   font-family: var(--font-secundaria);
 }
+
+.depoimentos-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.depoimentos-comentarios-container {
+  display: flex;
+  gap: 24px;
+  padding: 0 24px;
+  animation: spin 45s infinite linear;
+  cursor: default;
+}
+
+.depoimentos-comentarios-container:hover {
+  animation-play-state: paused;
+}
+
+.depoimentos-comentarios-container::-webkit-scrollbar {
+  display: none;
+}
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+.depoimento-card {
+  margin-top: 16px;
+  font-family: var(--font-secundaria);
+  flex: 0 0 280px;
+  padding: 16px;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+}
+
+.depoimentos-comentarios-container h3 {
+  font-weight: bold;
+  color: var(--cor-principal);
+  margin-bottom: 8px;
+}
+
 
 /*            PERGUNTAS FREQUENTES           */
 
