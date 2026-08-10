@@ -121,3 +121,24 @@ function criarCard(depoimento) {
 depoimentos.forEach((depoimento) => {
   criarCard(depoimento);
 })
+
+
+function alternarItem(item, pergunta) {
+  const estaAberto = item.classList.contains('is-open');
+  item.classList.toggle('is-open')
+  pergunta.setAttribute('aria-expanded', String(!estaAberto))
+}
+
+function configurarAccordion() {
+  const itens = document.querySelectorAll('.faq-item');
+
+  itens.forEach((item) => {
+    const pergunta = item.querySelector('.faq-pergunta');
+
+    pergunta.addEventListener('click', () => {
+      alternarItem(item, pergunta);
+    })
+  })
+}
+
+configurarAccordion()
