@@ -259,7 +259,7 @@ section {
   gap: 16px;
 }
 
-@media (width <= 960px) {
+@media (width <= 980px) {
   .servicos-card-container {
     align-items: center;
     flex-direction: column;
@@ -374,6 +374,14 @@ section {
   flex: 0.6;
 }
 
+@media (width <= 1115px) {
+  .faq {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
 .faq-titulo h2 {
   font-size: clamp(2rem, 2vw, 5rem);
   font-family: var(--font-principal);
@@ -434,3 +442,44 @@ section {
   opacity: 1;
 }
 
+/*                  CONTATO                  */
+.contato {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-destaque-branco);
+}
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--cor-principal);
+  width: 80%;
+  padding: 24px 36px;
+  border-radius: 24px;
+}
+
+.contato-text-container h2 {
+  font-family: var(--font-principal);
+  text-align: center;
+}
+
+.contato-text-container p {
+  font-family: var(--font-secundaria);
+  font-weight: 500;
+  text-align: center;
+}
+
+.contato-btn {
+  background-color: var(--cor-complementar);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contato-btn img {
+  width: 12px;
+}
