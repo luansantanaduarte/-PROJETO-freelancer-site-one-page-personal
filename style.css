@@ -208,6 +208,7 @@ section {
 }
 
 .sobre-mim-cards {
+  cursor: default;
   border: 2px solid var(--cor-complementar);
   border-radius: 8px;
   align-items: center;
