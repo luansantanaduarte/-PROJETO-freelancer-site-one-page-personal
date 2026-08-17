@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section, footer {
   padding: 48px clamp(1rem, 8vw, 15rem);
 }
 
@@ -44,6 +44,7 @@ section {
 }
 
 .header-logo {
+  width: 36px;
   justify-self: start;
 }
 
@@ -359,7 +360,6 @@ section {
   margin-bottom: 8px;
 }
 
-
 /*            PERGUNTAS FREQUENTES           */
 
 .faq {
@@ -494,5 +494,74 @@ section {
     gap: 8px;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/*                  FOOTER                   */
+.rodape {
+  background-color: var(--cor-principal);
+  font-family: var(--font-secundaria);
+  color: var(--cor-destaque-branco);
+}
+
+.rodape-text-logo {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+.rodape-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.rodape-text-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.rodape-text-nav-containers ul li {
+  list-style: none;
+}
+
+.rodape-text-nav-containers ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rodape-text-nav-redes ul {
+  display: flex;
+  gap: 8px;
+}
+
+.rodape-text-nav-containers h3 {
+  margin-bottom: 8px;
+}
+
+.rodape-logos {
+  width: 25px;
+}
+
+.rodape-copyright hr {
+  border: 1px solid var(--cor-destaque-branco);
+}
+
+.rodape-copyright p {
+  margin-top: 24px;
+  text-align: center;
+}
+
+@media (width <= 570px) {
+  .rodape-text-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .rodape-text-nav {
+    flex-direction: column;
+  }
+  
+  .rodape-text-logo {
+    align-self: center;
   }
 }
