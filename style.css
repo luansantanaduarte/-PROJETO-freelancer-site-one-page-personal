@@ -44,7 +44,7 @@ section, footer {
 }
 
 .header-logo {
-  width: 36px;
+  width: 42px;
   justify-self: start;
 }
 
@@ -333,6 +333,12 @@ section, footer {
   cursor: default;
 }
 
+@media (width <= 750px) {
+  .depoimentos-comentarios-container {
+    animation-duration: 15s;
+  }
+}
+
 .depoimentos-comentarios-container:hover {
   animation-play-state: paused;
 }
@@ -463,13 +469,13 @@ section, footer {
 }
 
 .contato-text-container h2 {
-  font-size: clamp(1vw, 1.5vw, 3vw);
+  font-size: clamp(24px, 0.5vw, 36px);
   font-family: var(--font-principal);
   text-align: center;
 }
 
 .contato-text-container p {
-   font-size: clamp(1vw, 0.3vw, 2vw);
+   font-size: clamp(16px, 0.7vw, 36px);
   font-family: var(--font-secundaria);
   font-weight: 500;
   text-align: center;
